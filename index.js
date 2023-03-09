@@ -184,64 +184,662 @@ const zen_class_users = [
 const mentors = [
   {
     "name": "John Smith",
-    "no_of_mentees": 14,
+    "mentees": 14,
     "email": "johnsmith@example.com",
     "gender": "male"
   },
   {
     "name": "Jenny Jones",
-    "no_of_mentees": 16,
+    "mentees": 16,
     "email": "jennyjones@example.com",
     "gender": "female"
   },
   {
     "name": "Paul Anderson",
-    "no_of_mentees": 18,
+    "mentees": 18,
     "email": "paulanderson@example.com",
     "gender": "male"
   },
   {
     "name": "Emily Taylor",
-    "no_of_mentees": 17,
+    "mentees": 17,
     "email": "emilytaylor@example.com",
     "gender": "female"
   },
   {
     "name": "Sam Brown",
-    "no_of_mentees": 15,
+    "mentees": 15,
     "email": "sambrown@example.com",
     "gender": "male"
   },
   {
     "name": "Olivia Williams",
-    "no_of_mentees": 19,
+    "mentees": 19,
     "email": "oliviawilliams@example.com",
     "gender": "female"
   },
   {
     "name": "James Davis",
-    "no_of_mentees": 13,
+    "mentees": 13,
     "email": "jamesdavis@example.com",
     "gender": "male"
   },
   {
     "name": "Sophia Miller",
-    "no_of_mentees": 16,
+    "mentees": 16,
     "email": "sophiamiller@example.com",
     "gender": "female"
   },
   {
     "name": "Michael Wilson",
-    "no_of_mentees": 14,
+    "mentees": 14,
     "email": "michaelwilson@example.com",
     "gender": "male"
   },
   {
     "name": "Isabella Taylor",
-    "no_of_mentees": 18,
+    "mentees": 18,
     "email": "isabellataylor@example.com",
     "gender": "female"
   }
 ]
 
+const october_data = [
+  {
+    "day" : 1 ,
+    "date": "1-10-2022",
+    "topic": "Introduction to HTML",
+    "task": "Create a basic HTML template with a heading, paragraph and image",
+    "absentees": 5
+},
+{
+  "day" : 2 ,  
+  "date": "2-10-2022",
+    "topic": "Introduction to CSS",
+    "task": "Create a basic CSS stylesheet to style the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 3 ,  
+  "date": "3-10-2022",
+},
+{
+  "day" : 4 ,  
+  "date": "4-10-2022",
+},
+{
+  "day" :5 ,  
+  "date": "5-10-2022",
+    "topic": "JavaScript Loops",
+    "task": "Create a basic JavaScript loop to add interactivity to the HTML template created on 1st oct",
+    "absentees": 3
+},
+{
+  "day" : 6 ,  
+  "date": "6-10-2022",
+    "topic": "JavaScript Events",
+    "task": "Create a basic JavaScript event listener to add interactivity to the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 7 ,  
+  "date": "7-10-2022",
+    "topic": "DOM Manipulation",
+    "task": "Create a basic DOM manipulation script to add interactivity to the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 8 ,  
+  "date": "8-10-2022",
+    "topic": "AJAX Requests",
+    "task": "Create a basic AJAX request to add interactivity to the HTML template created on 1st oct",
+    "absentees": 0
+},
+{
+  "day" : 9 ,  
+  "date": "9-10-2022",
+    "topic": "API Requests",
+    "task": "Create a basic API request to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 10 ,  
+  "date": "10-10-2022",
+},
+{
+  "day" : 11 ,  
+  "date": "11-10-2022",
+},
+{
+  "day" : 12 ,  
+  "date": "12-10-2022",
+    "topic": "jQuery",
+    "task": "Create a basic jQuery script to add interactivity to the HTML template created on 1st oct",
+    "absentees": 0
+},
+{
+  "day" : 13 ,  
+  "date": "13-10-2022",
+    "topic": "AngularJS",
+    "task": "Create a basic AngularJS script to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 14 ,  
+  "date": "14-10-2022",
+    "topic": "ReactJS",
+    "task": "Create a basic ReactJS script to add interactivity to the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 15 ,  
+  "date": "15-10-2022",
+    "topic": "VueJS",
+    "task": "Create a basic VueJS script to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 16 ,  
+  "date": "16-10-2022",
+    "topic": "Introduction to Bootstrap",
+    "task": "Create a basic Bootstrap template to add interactivity to the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 17 ,  
+  "date": "17-10-2022",
+},
+{
+  "day" : 18 ,  
+  "date": "18-10-2022",
+},
+{
+  "day" : 19 ,  
+  "date": "19-10-2022",
+    "topic": "Bootstrap Utilities",
+    "task": "Create a basic Bootstrap utility to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 20 ,  
+  "date": "20-10-2022",
+    "topic": "Introduction to Sass",
+    "task": "Create a basic Sass file to add interactivity to the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 21 ,  
+  "date": "21-10-2022",
+    "topic": "Sass Variables",
+    "task": "Create a basic Sass variable to add interactivity to the HTML template created on 1st oct",
+    "absentees":4
+},
+{
+  "day" : 22 ,  
+  "date": "22-10-2022",
+    "topic": "Sass Mixins",
+    "task": "Create a basic Sass mixin to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 23 ,  
+  "date": "23-10-2022",
+    "topic": "Sass Functions",
+    "task": "Create a basic Sass function to add interactivity to the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 24 ,  
+  "date": "24-10-2022",
+},
+{
+  "day" : 25 ,  
+  "date": "25-10-2022",
+},
+{
+  "day" : 26 ,  
+  "date": "26-10-2022",
+    "topic": "Git Basics",
+    "task": "Create a basic Git repository to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 27 ,  
+  "date": "27-10-2022",
+    "topic": "Git Flow",
+    "task": "Create a basic Git flow to add interactivity to the HTML template created on 1st oct",
+    "absentees": 2
+},
+{
+  "day" : 28 ,  
+  "date": "28-10-2022",
+    "topic": "Git Branches",
+    "task": "Create a basic Git branch to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 29 ,  
+  "date": "29-10-2022",
+    "topic": "Git Merging",
+    "task": "Create a basic Git merge to add interactivity to the HTML template created on 1st oct",
+    "absentees": 4
+},
+{
+  "day" : 30 ,  
+  "date": "30-10-2022",
+    "topic": "Git Pull Requests",
+    "task": "Create a basic Git pull request to add interactivity to the HTML template created on 1st oct",
+    "absentees": 1
+},
+{
+  "day" : 31 ,  
+  "date": "31-10-2022",
+}
+]
 
+const november_data =  [
+  {
+    "day" : 1 ,  
+    "date": "1-11-2022",
+  },
+  {
+    "day" : 2 ,  
+    "date": "2-11-2022",
+      "topic": "Routing",
+      "task": "Create routing for all the endpoints",
+      "absentees": 2
+  },
+  {
+    "day" : 3 ,  
+    "date": "3-11-2022",
+      "topic": "Database Design",
+      "task": "Design a database schema to store user data",
+      "absentees": 0
+  },
+  {
+    "day" : 4 ,  
+    "date": "4-11-2022",
+      "topic": "Authentication",
+      "task": "Implement authentication using JWT",
+      "absentees": 2
+  },
+  {
+    "day" : 5 ,  
+    "date": "5-11-2022",
+      "topic": "Database Security",
+      "task": "Implement database security using hashing and salting",
+      "absentees": 1
+  },
+  {
+    "day" : 6 ,  
+    "date": "6-11-2022",
+      "topic": "Error Handling",
+      "task": "Implement error handling for all endpoints",
+      "absentees": 0
+  },
+  {
+    "day" : 7 ,  
+    "date": "7-11-2022",
+  },
+  {
+    "day" : 8 ,  
+    "date": "8-11-2022",
+  },
+  {
+    "day" : 9 ,  
+    "date": "9-11-2022",
+      "topic": "Deployment",
+      "task": "Deploy the application to a server",
+      "absentees": 0
+  },
+  {
+    "day" : 10 ,  
+    "date": "10-11-2022",
+      "topic": "Performance Optimization",
+      "task": "Optimize the application for performance",
+      "absentees": 0
+  },
+  {
+    "day" : 11 ,  
+    "date": "11-11-2022",
+      "topic": "Security Analysis",
+      "task": "Analyze the application for security vulnerabilities",
+      "absentees": 1
+  },
+  {
+    "day" : 12 ,  
+    "date": "12-11-2022",
+      "topic": "API Versioning",
+      "task": "Implement API versioning for the application",
+      "absentees": 0
+  },
+  {
+    "day" : 13,  
+    "date": "13-11-2022",
+      "topic": "Scalability",
+      "task": "Design the application for scalability",
+      "absentees": 2
+  },
+  {
+    "day" : 14 ,  
+    "date": "14-11-2022",
+  },
+  {
+    "day" : 15 ,  
+    "date": "15-11-2022",
+  },
+  {
+    "day" : 16 ,  
+    "date": "16-11-2022",
+      "topic": "Database Migration",
+      "task": "Write database migrations for all the changes",
+      "absentees": 3
+  },
+  {
+    "day" : 17 ,  
+    "date": "17-11-2022",
+      "topic": "API Throttling",
+      "task": "Implement API throttling to prevent abuse",
+      "absentees": 1
+  },
+  {
+    "day" : 18 ,  
+    "date": "18-11-2022",
+      "topic": "Data Validation",
+      "task": "Implement data validation for all endpoints",
+      "absentees": 0
+  },
+  {
+    "day" : 19 ,  
+    "date": "19-11-2022",
+      "topic": "Monitoring",
+      "task": "Implement application monitoring and alerts",
+      "absentees": 0
+  },
+  {
+    "day" : 20 ,  
+    "date": "20-11-2022",
+      "topic": "Backup Strategy",
+      "task": "Design a backup strategy for the application",
+      "absentees": 2
+  },
+  {
+    "day" : 21 ,  
+    "date": "21-11-2022",
+  },
+  {
+    "day" : 22 ,  
+    "date": "22-11-2022",
+  },
+  {
+    "day" : 23 ,  
+    "date": "23-11-2022",
+      "topic": "Data Encryption",
+      "task": "Implement data encryption for sensitive data",
+      "absentees": 5
+  },
+  {
+    "day" : 24 ,  
+    "date": "24-11-2022",
+      "topic": "API Caching",
+      "task": "Implement caching for API responses",
+      "absentees": 2
+  },
+  {
+    "day" : 25 ,  
+    "date": "25-11-2022",
+      "topic": "Data Modeling",
+      "task": "Design a data model to store user data",
+      "absentees": 3
+  },
+  {
+    "day" : 26 ,  
+    "date": "26-11-2022",
+      "topic": "API Versioning",
+      "task": "Implement API versioning for the application",
+      "absentees": 1
+  },
+  {
+    "day" : 27 ,  
+    "date": "27-11-2022",
+      "topic": "API Documentation",
+      "task": "Create documentation for all the endpoints",
+      "absentees": 2
+  },
+  {
+    "day" : 28 ,  
+    "date": "28-11-2022",
+  },
+  {
+    "day" : 29 ,  
+    "date": "29-11-2022",
+  },
+  {
+    "day" : 30 ,  
+    "date": "30-11-2022",
+      "topic": "Routing",
+      "task": "Create routing for all the endpoints",
+      "absentees": 0
+  }
+]
+
+const december_data = [
+	{
+		"day" : 1 ,
+    "date": "01-12-2022",
+		"topic": "SQL",
+		"task": "Writing SQL queries",
+		"absentees": 2
+	},
+	{
+		"day" : 2 ,
+    "date": "02-12-2022",
+		"topic": "MongoDB",
+		"task": "Data modelling",
+		"absentees": 0
+	},
+	{
+		"day" : 3 ,
+    "date": "03-12-2022",
+		"topic": "MySQL",
+		"task": "Writing stored procedures",
+		"absentees": 1
+	},
+	{
+		"day" : 4 ,
+    "date": "04-12-2022",
+		"topic": "Oracle",
+		"task": "Data modelling",
+		"absentees": 0
+	},
+	{
+		"day" : 5 ,
+    "date": "05-12-2022",
+		"topic": "SQLite",
+		"task": "Creating and managing databases",
+		"absentees": 3
+	},
+	{
+		"day" : 6 ,
+    "date": "06-12-2022",
+		"topic": "PostgreSQL",
+		"task": "Writing SQL queries",
+		"absentees": 1
+	},
+	{
+		"day" : 7 ,
+    "date": "07-12-2022",
+		"topic": "Redis",
+		"task": "Writing stored procedures",
+		"absentees": 0
+	},
+	{
+		"day" : 8 ,
+    "date": "08-12-2022",
+		"topic": "Cassandra",
+		"task": "Data modelling",
+		"absentees": 2
+	},
+	{
+		"day" : 9 ,
+    "date": "09-12-2022",
+		"topic": "Hadoop",
+		"task": "Creating and managing databases",
+		"absentees": 1
+	},
+	{
+		"day" : 10 ,
+    "date": "10-12-2022",
+		"topic": "SQL",
+		"task": "Writing SQL queries",
+		"absentees": 4
+	},
+	{
+		"day" : 11 ,
+    "date": "11-12-2022",
+		"topic": "MongoDB",
+		"task": "Data modelling",
+		"absentees": 0
+	},
+	{
+		"day" : 12 ,
+    "date": "12-12-2022",
+		"topic": "MySQL",
+		"task": "Writing stored procedures",
+		"absentees": 2
+	},
+	{
+		"day" : 13 ,
+    "date": "13-12-2022",
+		"topic": "Oracle",
+		"task": "Data modelling",
+		"absentees": 3
+	},
+	{
+		"day" : 14 ,
+    "date": "14-12-2022",
+		"topic": "SQLite",
+		"task": "Creating and managing databases",
+		"absentees": 1
+	},
+	{
+		"day" : 15 ,
+    "date": "15-12-2022",
+		"topic": "PostgreSQL",
+		"task": "Writing SQL queries",
+		"absentees": 0
+	},
+	{
+		"day" : 16 ,
+    "date": "16-12-2022",
+		"topic": "Redis",
+		"task": "Writing stored procedures",
+		"absentees": 2
+	},
+	{
+		"day" : 17 ,
+    "date": "17-12-2022",
+		"topic": "Cassandra",
+		"task": "Data modelling",
+		"absentees": 4
+	},
+	{
+		"day" : 18 ,
+    "date": "18-12-2022",
+		"topic": "Hadoop",
+		"task": "Creating and managing databases",
+		"absentees": 1
+	},
+	{
+		"day" : 19 ,
+    "date": "19-12-2022",
+		"topic": "SQL",
+		"task": "Writing SQL queries",
+		"absentees": 0
+	},
+	{
+		"day" : 20 ,
+    "date": "20-12-2022",
+		"topic": "MongoDB",
+		"task": "Data modelling",
+		"absentees": 3
+	},
+	{
+		"day" : 21 ,
+    "date": "21-12-2022",
+		"topic": "MySQL",
+		"task": "Writing stored procedures",
+		"absentees": 2
+	},
+	{
+		"day" : 22 ,
+    "date": "22-12-2022",
+		"topic": "Oracle",
+		"task": "Data modelling",
+		"absentees": 1
+	},
+	{
+		"day" : 23 ,
+    "date": "23-12-2022",
+		"topic": "SQLite",
+		"task": "Creating and managing databases",
+		"absentees": 0
+	},
+	{
+		"day" : 24 ,
+    "date": "24-12-2022",
+		"topic": "PostgreSQL",
+		"task": "Writing SQL queries",
+		"absentees": 4
+	},
+	{
+		"day" : 25 ,
+    "date": "25-12-2022",
+		"topic": "Redis",
+		"task": "Writing stored procedures",
+		"absentees": 0
+	},
+	{
+		"day" : 26 ,
+    "date": "26-12-2022",
+		"topic": "Cassandra",
+		"task": "Data modelling",
+		"absentees": 3
+	},
+	{
+		"day" : 27 ,
+    "date": "27-12-2022",
+		"topic": "Hadoop",
+		"task": "Creating and managing databases",
+		"absentees": 1
+	},
+	{
+		"day" : 28 ,
+    "date": "28-12-2022",
+		"topic": "SQL",
+		"task": "Writing SQL queries",
+		"absentees": 2
+	},
+	{
+		"day" : 29 ,
+    "date": "29-12-2022",
+		"topic": "MongoDB",
+		"task": "Data modelling",
+		"absentees": 0
+	},
+	{
+		"day" : 30 ,
+    "date": "30-12-2022",
+		"topic": "MySQL",
+		"task": "Writing stored procedures",
+		"absentees": 3
+	},
+	{
+		"day" : 31 ,
+    "date": "31-12-2022",
+		"topic": "Oracle",
+		"task": "Data modelling",
+		"absentees": 1
+	}
+]
+ 
