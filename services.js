@@ -1,6 +1,8 @@
 import { client } from "./index.js";
 
 
+// ----------------------Zen Class Users Data ------------------------------
+
 export async function users() {
   return await client
   .db("Zen_Class_DB")
@@ -9,6 +11,8 @@ export async function users() {
   .toArray();
 }
 
+
+// ----------------------Zen Class Users codekata Data ------------------------------
 
 export async function users_codekata() {
   return await client
@@ -19,6 +23,8 @@ export async function users_codekata() {
 }
 
 
+// ----------------------Zen Class Users absent Data ------------------------------
+
 export async function users_absent() {
   return await client
   .db("Zen_Class_DB")
@@ -27,6 +33,8 @@ export async function users_absent() {
   .toArray();
 }
 
+
+// ----------------------Zen Class mentors Data ------------------------------
 
 export async function mentors() {
   return await client
@@ -37,6 +45,8 @@ export async function mentors() {
 }
 
 
+// ----------------------Zen Class mentor mentees Data ------------------------------
+
 export async function mentors_mentees_data() {
   return await client
     .db("Zen_Class_DB")
@@ -46,6 +56,8 @@ export async function mentors_mentees_data() {
 }
 
 
+// ----------------------Zen Class october Data ------------------------------
+
 export async function october_data() {
   return await client
     .db("Zen_Class_DB")
@@ -54,6 +66,8 @@ export async function october_data() {
     .toArray();
 }
 
+
+// ----------------------Zen Class october 1 - 15 Data ------------------------------
 
 export async function october_1to15_data() {
   return await client
@@ -65,6 +79,8 @@ export async function october_1to15_data() {
 
 
 
+// ----------------------Zen Class november Data ------------------------------
+
 export async function november_data() {
   return await client
     .db("Zen_Class_DB")
@@ -73,6 +89,8 @@ export async function november_data() {
     .toArray();
 }
 
+
+// ----------------------Zen Class december Data ------------------------------
 
 export async function december_data() {
   return await client
