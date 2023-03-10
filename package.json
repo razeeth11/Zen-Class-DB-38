@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/razeeth11/Zen-Class-DB-38#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.21"
