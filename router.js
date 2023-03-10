@@ -24,7 +24,7 @@ router.get("/users", async function (request, response) {
 
 // ----------------------Zen Class Users absent Data ------------------------------
 
-router.get("/users", async function (request, response) {
+router.get("/absent_users", async function (request, response) {
   const users_absent_data = await users_absent();
 
   response.send(users_absent_data);
@@ -51,7 +51,7 @@ router.get("/mentors", async function (request, response) {
 
 // ----------------------Zen Class mentor mentees Data ------------------------------
 
-router.get("/mentors", async function (request, response) {
+router.get("/mentors_mentees", async function (request, response) {
   const mentors_mentees = await mentors_mentees_data();
 
   response.send(mentors_mentees);
@@ -69,7 +69,7 @@ router.get("/october", async function (request, response) {
 
 // ----------------------Zen Class october 1 to 15 Data ------------------------------
 
-router.get("/october", async function (request, response) {
+router.get("/october_1to15", async function (request, response) {
   const october1_15 = await october_1to15_data();
 
   response.send(october1_15);
