@@ -1,3 +1,5 @@
+import express from 'express'
+
 const zen_class_users = [
 	{
       "name": "John Doe",
@@ -261,11 +263,11 @@ const october_data = [
 },
 {
   "day" : 3 ,  
-  "date": "3-10-2022",
+  "date": "3-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" : 4 ,  
-  "date": "4-10-2022",
+  "date": "4-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" :5 ,  
@@ -304,11 +306,11 @@ const october_data = [
 },
 {
   "day" : 10 ,  
-  "date": "10-10-2022",
+  "date": "10-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" : 11 ,  
-  "date": "11-10-2022",
+  "date": "11-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" : 12 ,  
@@ -347,11 +349,11 @@ const october_data = [
 },
 {
   "day" : 17 ,  
-  "date": "17-10-2022",
+  "date": "17-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" : 18 ,  
-  "date": "18-10-2022",
+  "date": "18-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" : 19 ,  
@@ -390,11 +392,11 @@ const october_data = [
 },
 {
   "day" : 24 ,  
-  "date": "24-10-2022",
+  "date": "24-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" : 25 ,  
-  "date": "25-10-2022",
+  "date": "25-10-2022 (No Sessions - HOLIDAY)",
 },
 {
   "day" : 26 ,  
@@ -433,14 +435,14 @@ const october_data = [
 },
 {
   "day" : 31 ,  
-  "date": "31-10-2022",
+  "date": "31-10-2022 (No Sessions - HOLIDAY)",
 }
 ]
 
 const november_data =  [
   {
     "day" : 1 ,  
-    "date": "1-11-2022",
+    "date": "1-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 2 ,  
@@ -479,11 +481,11 @@ const november_data =  [
   },
   {
     "day" : 7 ,  
-    "date": "7-11-2022",
+    "date": "7-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 8 ,  
-    "date": "8-11-2022",
+    "date": "8-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 9 ,  
@@ -522,11 +524,11 @@ const november_data =  [
   },
   {
     "day" : 14 ,  
-    "date": "14-11-2022",
+    "date": "14-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 15 ,  
-    "date": "15-11-2022",
+    "date": "15-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 16 ,  
@@ -565,11 +567,11 @@ const november_data =  [
   },
   {
     "day" : 21 ,  
-    "date": "21-11-2022",
+    "date": "21-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 22 ,  
-    "date": "22-11-2022",
+    "date": "22-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 23 ,  
@@ -608,11 +610,11 @@ const november_data =  [
   },
   {
     "day" : 28 ,  
-    "date": "28-11-2022",
+    "date": "28-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 29 ,  
-    "date": "29-11-2022",
+    "date": "29-11-2022 (No Sessions - HOLIDAY)",
   },
   {
     "day" : 30 ,  
@@ -654,17 +656,11 @@ const december_data = [
 	},
 	{
 		"day" : 5 ,
-    "date": "05-12-2022",
-		"topic": "SQLite",
-		"task": "Creating and managing databases",
-		"absentees": 3
+    "date": "05-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 6 ,
-    "date": "06-12-2022",
-		"topic": "PostgreSQL",
-		"task": "Writing SQL queries",
-		"absentees": 1
+    "date": "06-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 7 ,
@@ -703,17 +699,11 @@ const december_data = [
 	},
 	{
 		"day" : 12 ,
-    "date": "12-12-2022",
-		"topic": "MySQL",
-		"task": "Writing stored procedures",
-		"absentees": 2
+    "date": "12-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 13 ,
-    "date": "13-12-2022",
-		"topic": "Oracle",
-		"task": "Data modelling",
-		"absentees": 3
+    "date": "13-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 14 ,
@@ -752,17 +742,11 @@ const december_data = [
 	},
 	{
 		"day" : 19 ,
-    "date": "19-12-2022",
-		"topic": "SQL",
-		"task": "Writing SQL queries",
-		"absentees": 0
+    "date": "19-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 20 ,
-    "date": "20-12-2022",
-		"topic": "MongoDB",
-		"task": "Data modelling",
-		"absentees": 3
+    "date": "20-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 21 ,
@@ -801,17 +785,11 @@ const december_data = [
 	},
 	{
 		"day" : 26 ,
-    "date": "26-12-2022",
-		"topic": "Cassandra",
-		"task": "Data modelling",
-		"absentees": 3
+    "date": "26-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 27 ,
-    "date": "27-12-2022",
-		"topic": "Hadoop",
-		"task": "Creating and managing databases",
-		"absentees": 1
+    "date": "27-12-2022 (No Sessions - HOLIDAY)",
 	},
 	{
 		"day" : 28 ,
@@ -842,4 +820,35 @@ const december_data = [
 		"absentees": 1
 	}
 ]
+
+
+const PORT = 2525;
+const app =  express();
+
+app.get("/" , function (request , response){
+  response.send("Zen Class DataBase")
+})
+
+app.get("/users" , function (request , response){
+  response.send(zen_class_users)  
+})
+
+app.get("/mentors" , function (request , response){
+  response.send(mentors)  
+})
+
+app.get("/october" , function (request , response){
+  response.send(october_data)  
+})
+
+app.get("/november" , function (request , response){
+  response.send(november_data)  
+})
+
+app.get("/december" , function (request , response){
+  response.send(december_data)  
+})
+
+app.listen(PORT, ()=> console.log(`The server started in : ${PORT}`))
+
  
